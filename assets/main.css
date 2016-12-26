@@ -1,19 +1,19 @@
 /* Normalize body/html to fill whole browser window. */
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #the_long_cat {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 
-    /* Center horizontally and put to bottom. */
-    position: absolute;
-    left: 50%;
-    margin-left: -50px;  /* TODO: Centering not exact. */
-    bottom: 0;
+  /* Center horizontally and put to bottom. */
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;  /* TODO: Centering not exact. */
+  bottom: 0;
 
-    background: black;
+  background: black;
 }
