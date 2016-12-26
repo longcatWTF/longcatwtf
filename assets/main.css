@@ -3,11 +3,15 @@
 /* Normalize body/html to fill whole browser window. */
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
 #the_longcat_container {
+  height: 100%;
+  width: 100%;
+
   /* Use flexbox to put the longcat to the bottom center. */
   display: flex;
   justify-content: center;
