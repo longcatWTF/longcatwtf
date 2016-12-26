@@ -1,3 +1,5 @@
+/* vim: set ts=2 sw=2: */
+
 /* Normalize body/html to fill whole browser window. */
 html, body {
   height: 100%;
