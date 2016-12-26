@@ -5,15 +5,16 @@ html, body {
   padding: 0;
 }
 
-#the_long_cat {
+#the_longcat_container {
+  /* Use flexbox to put the longcat to the bottom center. */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#the_longcat {
   width: 100px;
   height: 100px;
-
-  /* Center horizontally and put to bottom. */
-  position: absolute;
-  left: 50%;
-  margin-left: -50px;  /* TODO: Centering not exact. */
-  bottom: 0;
 
   background: black;
 }
