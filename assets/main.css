@@ -60,7 +60,7 @@ html, body {
 }
 
 .background-earth__front {
-  background: url('img/earth/earth-front.png') 0 0 / 100% 100% no-repeat;
+  background: url('img/earth/earth__front.png') 0 0 / 1000px 500px no-repeat;
   width: 100%;
   height: 100%;
 }
