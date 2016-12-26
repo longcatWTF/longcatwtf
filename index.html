@@ -1,23 +1,27 @@
 <!DOCTYPE html>
+<!-- vim: set ts=2 sw=2: -->
 <html>
 <head>
-  <meta charset=utf-8 />
-  <meta name=description content="Longcat is loooooooong!" />
-  <meta name=author content="Thibault Jan Beyer" />
-  <meta name=author content="Lucas Beyer" />
+  <meta charset="utf-8" />
+  <meta name="description" content="Longcat is loooooooong!" />
+  <meta name="author" content="Thibault Jan Beyer" />
+  <meta name="author" content="Lucas Beyer" />
 
   <!-- http://davidbcalhoun.com/2010/viewport-metatag/ -->
-  <meta name=viewport content="width=device-width,initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-  <link href=assets/main.css rel=stylesheet type=text/css />
+  <link href="assets/main.css" rel="stylesheet" type="text/css" />
 
   <title>Longcat is looooooooooong!</title>
 </head>
 <body>
-  <section class="background background--underground"></section>
-  <div id=the_long_cat></div>
 
-  <script src=lib/longcat.js></script>
-  <script src=lib/main.js></script>
+  <section class="background background--underground"></section>
+  <div id="the_longcat_container">
+    <div id="the_longcat"></div>
+  </div>
+
+  <script src="lib/longcat.js"></script>
+  <script src="lib/main.js"></script>
 </body>
 </html>

@@ -1,6 +1,9 @@
+/* vim: set ts=2 sw=2: */
+
 /* Normalize body/html to fill whole browser window. */
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -10,15 +13,19 @@ html, body {
  * cat
  */
 
-#the_long_cat {
+#the_longcat_container {
+  height: 100%;
+  width: 100%;
+
+  /* Use flexbox to put the longcat to the bottom center. */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#the_longcat {
   width: 100px;
   height: 100px;
-
-  /* Center horizontally and put to bottom. */
-  position: absolute;
-  left: 50%;
-  margin-left: -50px;  /* TODO: Centering not exact. */
-  bottom: 0;
 
   background: hotpink;
 }
