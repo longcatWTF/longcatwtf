@@ -17,7 +17,7 @@ html, body {
  * cat
  */
 
-#the_longcat_container {
+.longcat {
   height: 100%;
   left: 0;
   position: fixed;
@@ -30,11 +30,43 @@ html, body {
   align-items: flex-end;
 }
 
-#the_longcat {
-  width: 100px;
-  height: 100px;
+.longcat__container {
+  position: relative;
+  width: 536px;  /* Needs to be specified for the centering to work. */
+}
 
-  background: hotpink;
+.longcat__part {
+  position: absolute;
+}
+
+.longcat__hand-right {
+  top: -245px;
+}
+
+.longcat__hand-left {
+  top: -245px;
+}
+
+.longcat__mouth {
+  top: -240px;
+}
+
+.longcat__head {
+  top: -240px;
+}
+
+.longcat__upper-body {
+  top: -185px;
+}
+
+.longcat__infinite-repeat {
+  /*top: 123px;*/
+  display: none;
+}
+
+.longcat__lower-body {
+  top: 123px;
+  /*top: 238px;*/
 }
 
 
