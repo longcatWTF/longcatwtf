@@ -67,6 +67,11 @@ html, body {
   transform: translateY(-100%);
 }
 
+.longcat__head,
+.longcat__mouth {
+  transform-origin: 50% 70%;
+}
+
 
 /*******************
  * Sections
