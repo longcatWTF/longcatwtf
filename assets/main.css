@@ -2,11 +2,14 @@
 
 /* Normalize body/html to fill whole browser window. */
 html, body {
-  height: 100%;
-  width: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+
+.fullsize {
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -52,17 +55,30 @@ html, body {
 }
 
 /**
- * 1. Height from prev container - height from this container - some transition px (200) (to position above)
+ * 1. Height from prev container - some transition px (300)
  */
 .background-earth {
   height: 500px;
-  bottom: 2000px; /* 1 */
+  bottom: 2300px; /* 1 */
+  z-index: 999;
 }
 
 .background-earth__front {
-  background: url('img/earth/earth__front.png') 0 0 / 1000px 500px no-repeat;
-  width: 100%;
-  height: 100%;
+  background: url('img/earth/front.png') center bottom / 1000px 500px no-repeat;
+  position: absolute;
+}
+
+/**
+ * 1. Height from all prev container (+ magic number for perfect placement based on pixels)
+ */
+.background-earth-top {
+  height: 500px;
+  bottom: 2430px; /* 1 */
+}
+
+.background-earth-top__floor {
+  background: url('img/earth/top-floor.png') center bottom / 720px 240px no-repeat;
+  margin-left: -10px;
 }
 
 
