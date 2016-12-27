@@ -152,4 +152,5 @@ html, body {
   bottom: 0;
   color: white;
   text-shadow: 0 0 2px black;
+  z-index: 99999;
 }
