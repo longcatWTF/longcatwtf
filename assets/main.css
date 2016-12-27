@@ -72,6 +72,13 @@ html, body {
   transform-origin: 50% 70%;
 }
 
+.longcat__hand-right {
+  transform-origin: 70% 70%;
+}
+
+.longcat__hand-left {
+  transform-origin: 45% 75%;
+}
 
 /*******************
  * Sections
