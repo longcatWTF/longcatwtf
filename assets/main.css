@@ -103,6 +103,7 @@ html, body {
 
 .section-earth__front {
   background: url('img/earth/front.png') center bottom / 1000px 500px no-repeat;
+  margin-left: 20px;
 }
 
 .section-earth__transparent {
@@ -113,6 +114,9 @@ html, body {
 
 .section-earth__gulli {
   background: url('img/earth/gulli.png') center 15px / 234px 75px no-repeat;
+  height: 85px;
+  left: calc(50% - 100px);
+  width: 240px;
 }
 
 /**
