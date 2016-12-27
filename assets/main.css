@@ -15,60 +15,56 @@ html, body {
 }
 
 
+/*******************
+ * Cat
+ *******************/
 /**
- * cat
+ * 1. Use flexbox to put the longcat to the bottom center
+ * 2. See https://developer.mozilla.org/en/docs/Web/CSS/will-change
  */
-
 .longcat {
+  align-items: flex-end; /* 1 */
+  display: flex; /* 1 */
   height: 100%;
-  left: 0;
+  justify-content: center; /* 1 */
   position: fixed;
-  top: 0;
   width: 100%;
-
-  /* Use flexbox to put the longcat to the bottom center. */
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  will-change: transform; /* 2 */
 }
 
+/**
+ * 1. Define cat size
+ */
 .longcat__container {
   position: relative;
-  width: 536px;  /* Needs to be specified for the centering to work. */
+  max-width: 550px;
+  min-width: 300px;
+      width: 50%;  /* 1 */
 }
 
 .longcat__part {
   position: absolute;
-}
-
-.longcat__hand-right {
-  top: -245px;
-}
-
-.longcat__hand-left {
-  top: -245px;
-}
-
-.longcat__mouth {
-  top: -240px;
-}
-
-.longcat__head {
-  top: -240px;
-}
-
-.longcat__upper-body {
-  top: -185px;
-}
-
-.longcat__infinite-repeat {
-  /*top: 123px;*/
-  display: none;
+  top: 0;
+  width: 100%;
 }
 
 .longcat__lower-body {
-  top: 123px;
-  /*top: 238px;*/
+  transform: translateY(45%);
+}
+
+.longcat__infinite-repeat {
+  transform: translateY(135%);
+}
+
+.longcat__upper-body {
+  transform: translateY(-48%);
+}
+
+.longcat__hand-left,
+.longcat__mouth,
+.longcat__head,
+.longcat__hand-right {
+  transform: translateY(-100%);
 }
 
 
@@ -140,9 +136,9 @@ html, body {
 }
 
 
-/**
- * debugging
- */
+/*******************
+ * Debugging
+ *******************/
 
 #debug {
   position: fixed;
