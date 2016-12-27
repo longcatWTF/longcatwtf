@@ -73,32 +73,32 @@ html, body {
 
 
 /*******************
- * backgrounds
+ * Sections
  *******************/
 
-.background {
+.section {
   left: 0;
   position: absolute;
   width: 100%;
 }
 
-.background-underground {
+.section-underground {
   background: #000 url('img/bricks-pattern.jpg') 0 / 300px repeat;
   height: 2600px;
   bottom: 0;
 }
 
-.background-earth {
+.section-earth {
   height: 500px;
   bottom: 2600px;
   z-index: 999;
 }
 
-.background-earth__element {
+.section-earth__element {
   position: absolute;
 }
 
-.background-earth__earth {
+.section-earth__earth {
   background: url('img/earth/earth.png') 0 / 780px 200px repeat,
               url('img/earth/earth.png') 550px 600px / 780px 300px repeat,
               url('img/earth/earth.png') 250px 0 / 780px 180px repeat;
@@ -106,34 +106,34 @@ html, body {
   bottom: -230px;
 }
 
-.background-earth__front {
+.section-earth__front {
   background: url('img/earth/front.png') center bottom / 1000px 500px no-repeat;
 }
 
-.background-earth__transparent {
+.section-earth__transparent {
   background: url('img/earth/transparent.png') 0 / 675px 350px repeat;
   height: 350px;
   bottom: -535px;
 }
 
-.background-earth__gulli {
+.section-earth__gulli {
   background: url('img/earth/gulli.png') center 15px / 234px 75px no-repeat;
 }
 
 /**
  * 1. Height from all prev container (+ magic number for perfect placement based on pixels)
  */
-.background-earth-top {
+.section-earth-top {
   height: 500px;
   bottom: 3020px; /* 1 */
 }
 
-.background-earth-top__wall {
+.section-earth-top__wall {
   background: url('img/earth/wall.gif') center bottom / 1000px 150px repeat-x;
   bottom: -70px
 }
 
-.background-earth-top__floor {
+.section-earth-top__floor {
   background: url('img/earth/top-floor.png') center bottom / 730px 240px no-repeat,
               url('img/earth/floor.jpg') 0 0 / 275px 275px repeat;
   margin-left: -10px;
