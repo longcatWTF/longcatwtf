@@ -142,7 +142,7 @@ html, body {
  /*---*/
 
 .section-earth-top {
-  height: 500px;
+  height: 700px;
   bottom: 3020px;
 }
 
@@ -159,41 +159,49 @@ html, body {
  /*---*/
 
 .section-buildings {
-  background-color: lightskyblue;
+  background: #ded1c1 url('img/building/skyline.jpg') 0 bottom / 2000px 625px repeat-x;
   bottom: 3500px;
   height: 2000px;
 }
 
-.section-buildings__atomium {
-  background: url('img/building/atomium.png') -25% bottom / 700px 780px no-repeat;
-}
-
-.section-buildings__eiffel {
-  background: url('img/building/paris.png') 0 bottom / 560px 1400px no-repeat;
-}
-
-.section-buildings__bigben {
-  background: url('img/building/bigben.png') 25% bottom / 280px 1400px no-repeat;
-}
-
-.section-buildings__berlin {
-  background: url('img/building/berlin.png') 50% bottom / 180px 1800px no-repeat;
-}
-
-.section-buildings__colloseum {
-  background: url('img/building/colloseum.png') 75% bottom / 1200px 600px no-repeat;
+.section-buildings__pisa {
+  background: url('img/building/pisa.png') 150% bottom / 400px 1100px no-repeat;
+  bottom: -20px;
 }
 
 .section-buildings__jesus {
   background: url('img/building/jesus.png') 100% bottom / 900px 1200px no-repeat;
+  bottom: -160px;
+}
+
+.section-buildings__bigben {
+  background: url('img/building/bigben.png') 25% bottom / 280px 1400px no-repeat;
+  bottom: -290px;
+}
+
+.section-buildings__berlin {
+  background: url('img/building/berlin.png') 50% bottom / 180px 1800px no-repeat;
+  bottom: -425px;
+}
+
+.section-buildings__colloseum {
+  background: url('img/building/colloseum.png') 75% bottom / 1200px 600px no-repeat;
+  bottom: -565px;
+}
+
+.section-buildings__eiffel {
+  background: url('img/building/paris.png') 0 bottom / 560px 1400px no-repeat;
+  bottom: -700px;
+}
+
+.section-buildings__atomium {
+  background: url('img/building/atomium.png') -25% bottom / 700px 780px no-repeat;
+  bottom: -840px;
 }
 
 .section-buildings__liberty {
   background: url('img/building/liberty.png') 125% bottom / 500px 1500px no-repeat;
-}
-
-.section-buildings__pisa {
-  background: url('img/building/pisa.png') 150% bottom / 700px 1400px no-repeat;
+  bottom: -975px;
 }
 
 
