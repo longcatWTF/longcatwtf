@@ -49,11 +49,11 @@ html, body {
 }
 
 .longcat__lower-body {
-  transform: translateY(45%);
+  transform: translateY(45.8%);
 }
 
 .longcat__infinite-repeat {
-  transform: translateY(135%);
+  transform: translateY(138%);
 }
 
 .longcat__upper-body {
