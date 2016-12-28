@@ -6,9 +6,12 @@
   <meta name="description" content="Longcat is loooooooong!" />
   <meta name="author" content="Thibault Jan Beyer" />
   <meta name="author" content="Lucas Beyer" />
+  <!-- http://davidbcalhoun.com/2010/viewport-metatag/ -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Longcat is looooooooooong!</title>
 
-  <!-- Critical -->
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <!-- Critical CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet"> 
   <style>
   .preloader {
     background: #000;
@@ -23,44 +26,41 @@
     align-items: center;
     justify-content: center;
     transition: height 1s ease-in-out, background 1s ease-in-out;
+    text-align: center;
   }
 
   .preloader--loaded {
-    height: 35%;
+    height: 40%;
     background: transparent;
     pointer-events: none;
   }
 
   .preloader__text {
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Bangers', cursive;
+    color: lightgray;
+    letter-spacing: 1px;
+    animation: preload 1s infinite;
   }
 
   .preloader__text--loaded {
     margin-top: 20%;
+    animation: none;
+  }
+
+  @keyframes preload {
+    0%   { opacity: 1; }
+    50% { opacity: 0.5; }
+    100%   { opacity: 1; }
   }
   </style>
-
-  <!-- http://davidbcalhoun.com/2010/viewport-metatag/ -->
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-
-  <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/cat.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/score.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/sections.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/section-buildings.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/section-earth.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/section-earth-top.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/section-underground.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/section-sky.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/section-airspace.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/section-infinite.css" rel="stylesheet" type="text/css" />
-
-  <title>Longcat is looooooooooong!</title>
+  <!-- Bundle -->
+  <link href="assets/bundle.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <!-- Naming follows BEM: http://getbem.com -->
+
   <div class="preloader">
-    <span class="preloader__text">Loading...</span>
+    <span class="preloader__text">Loading... <br><br>Meanwhile, turn on your sound</span>
   </div>
 
   <section class="section section-underground"></section>
@@ -184,7 +184,14 @@
     </div>
   </div>
 
-  <div class="score">Score: <span class="score__number">0</span><br>High: <span class="highs__number">0</span></div>
+  <div class="score">
+    <div class="score__score">
+      Score: <span class="score__number">0</span>
+    </div>
+    <div class="score__high">
+      High: <span class="score__number score__number--high">0</span>
+    </div>
+  </div>
 
   <div id="debug">
     <div>y: <span id="dbg_y">0</span></div>
@@ -205,6 +212,12 @@
   <audio id="slowmeow" preload="auto">
     <source src="assets/audio/slowmeow.ogg" type="audio/ogg">
     <source src="assets/audio/slowmeow.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Source: https://archive.org/download/nyannyannyan but re-encoded -->
+  <audio id="nyansong" preload="auto">
+    <source src="assets/audio/nyansong.ogg" type="audio/ogg">
+    <source src="assets/audio/nyansong.mp3" type="audio/mp3">
   </audio>
 
   <script src="lib/physics.js"></script>
