@@ -11,7 +11,7 @@
   <title>Longcat is looooooooooong!</title>
 
   <!-- Critical CSS -->
-  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet"> 
   <style>
   .preloader {
     background: #000;
@@ -29,13 +29,15 @@
   }
 
   .preloader--loaded {
-    height: 35%;
+    height: 40%;
     background: transparent;
     pointer-events: none;
   }
 
   .preloader__text {
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Bangers', cursive;
+    color: lightgray;
+    letter-spacing: 1px;
   }
 
   .preloader__text--loaded {
@@ -173,7 +175,14 @@
     </div>
   </div>
 
-  <div class="score">Score: <span class="score__number">0</span><br>High: <span class="highs__number">0</span></div>
+  <div class="score">
+    <div class="score__score">
+      Score: <span class="score__number">0</span>
+    </div>
+    <div class="score__high">
+      High: <span class="score__number score__number--high">0</span>
+    </div>
+  </div>
 
   <div id="debug">
     <div>y: <span id="dbg_y">0</span></div>
