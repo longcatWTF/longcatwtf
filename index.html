@@ -26,6 +26,7 @@
     align-items: center;
     justify-content: center;
     transition: height 1s ease-in-out, background 1s ease-in-out;
+    text-align: center;
   }
 
   .preloader--loaded {
@@ -38,10 +39,18 @@
     font-family: 'Bangers', cursive;
     color: lightgray;
     letter-spacing: 1px;
+    animation: preload 1s infinite;
   }
 
   .preloader__text--loaded {
     margin-top: 20%;
+    animation: none;
+  }
+
+  @keyframes preload {
+    0%   { opacity: 1; }
+    50% { opacity: 0.5; }
+    100%   { opacity: 1; }
   }
   </style>
   <!-- Bundle -->
@@ -51,7 +60,7 @@
   <!-- Naming follows BEM: http://getbem.com -->
 
   <div class="preloader">
-    <span class="preloader__text">Loading...</span>
+    <span class="preloader__text">Loading... <br><br>Meanwhile, turn on your sound</span>
   </div>
 
   <section class="section section-underground"></section>
