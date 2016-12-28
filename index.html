@@ -7,6 +7,39 @@
   <meta name="author" content="Thibault Jan Beyer" />
   <meta name="author" content="Lucas Beyer" />
 
+  <!-- Critical -->
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  <style>
+  .preloader {
+    background: #000;
+    color: #fff;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999999999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: height 1s ease-in-out, background 1s ease-in-out;
+  }
+
+  .preloader--loaded {
+    height: 35%;
+    background: transparent;
+    pointer-events: none;
+  }
+
+  .preloader__text {
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+
+  .preloader__text--loaded {
+    margin-top: 20%;
+  }
+  </style>
+
   <!-- http://davidbcalhoun.com/2010/viewport-metatag/ -->
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
@@ -26,6 +59,14 @@
 </head>
 <body>
   <!-- Naming follows BEM: http://getbem.com -->
+  <div class="preloader">
+    <span class="preloader__text">Loading...</span>
+    <audio id="preloadsong" preload="auto" autoplay>
+      Your browser does not support the <code>audio</code> element.
+      <source src="assets/audio/weirdcats.ogg" type="audio/ogg">
+      <source src="assets/audio/weirdcats.mp3" type="audio/mp3">
+    </audio>
+  </div>
 
   <section class="section section-underground"></section>
 
@@ -148,7 +189,7 @@
     </div>
   </div>
 
-  <div class="score">Score: <span class="score__number">0</span></div>
+  <div class="score">Score: <span class="score__number">0</span><br>High: <span class="highs__number">0</span></div>
 
   <div id="debug">
     <div>y: <span id="dbg_y">0</span></div>
