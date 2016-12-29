@@ -30,14 +30,3 @@
 .score__number {
   display: inline-block;
 }
-
-.share {
-  color: white;
-  position: fixed;
-  left: 0px;
-  top: 100px;
-}
-
-.tweet, .fb {
-  cursor: pointer;
-}
