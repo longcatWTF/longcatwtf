@@ -9,6 +9,6 @@
 }
 
 .section-earth-top__floor {
-  background: url('../img/earth/top-floor.png') center bottom / 730px 240px no-repeat,
-              url('../img/earth/floor.jpg') 0 0 / 275px 275px repeat;
+  background: url('../img/earth/top-floor.gif') center bottom / 730px 240px no-repeat,
+              url('../img/earth/floor.gif') 0 0 / 275px 275px repeat;
 }
