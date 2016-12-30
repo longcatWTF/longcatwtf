@@ -1,6 +1,6 @@
 .section-airspace {
   background: linear-gradient(to top, #25006f 0%, rgba(0, 0, 0, 0) 30%),
-              url('../img/airspace/starmap.png');
+              url('../img/airspace/starmap.gif');
   bottom: 15470px;
   height: 60000px;
 }
@@ -9,7 +9,7 @@
 
 .section-airspace__satelite {
   animation: moveAround 13s infinite;
-  background: url('../img/airspace/satelite.png') center / 400px 250px no-repeat;
+  background: url('../img/airspace/satelite.gif') center / 400px 250px no-repeat;
   bottom: 9000px;
   height: 250px;
   width: 400px;
@@ -19,7 +19,7 @@
 
 .section-airspace__astronaut {
   animation: moveAround 10s infinite;
-  background: url('../img/airspace/astronaut.png') center / 160px 200px no-repeat;
+  background: url('../img/airspace/astronaut.gif') center / 160px 200px no-repeat;
   bottom: 14000px;
   height: 200px;
   left: 60%;
@@ -30,7 +30,7 @@
 
 .section-airspace__iss {
   animation: moveAround 20s infinite;
-  background: url('../img/airspace/iss.png') center / 1000px 1300px no-repeat;
+  background: url('../img/airspace/iss.gif') center / 1000px 1300px no-repeat;
   bottom: 24000px;
   height: 1300px;
   width: 1000px;
@@ -40,7 +40,7 @@
 
 .section-airspace__shoe {
   animation: moveAround 8s infinite;
-  background: url('../img/airspace/kak.png') center / 100px 80px no-repeat;
+  background: url('../img/airspace/kak.gif') center / 100px 80px no-repeat;
   bottom: 30000px;
   height: 80px;
   left: 50%;
@@ -51,7 +51,7 @@
 
 .section-airspace__kak {
   animation: moveAround 20s infinite;
-  background: url('../img/airspace/kak.png') center / 200px 190px no-repeat;
+  background: url('../img/airspace/kak.gif') center / 200px 190px no-repeat;
   bottom: 38000px;
   height: 190px;
   left: 20%;
@@ -62,7 +62,7 @@
 
 .section-airspace__waldo {
   animation: moveAround 4s infinite;
-  background: url('../img/airspace/waldo.png') center / 50px 100px no-repeat;
+  background: url('../img/airspace/waldo.gif') center / 50px 100px no-repeat;
   bottom: 45000px;
   height: 100px;
   left: 30%;
@@ -73,7 +73,7 @@
 
 .section-airspace__hitler {
   animation: moveAround 12s infinite;
-  background: url('../img/airspace/hitler.png') center / 230px 500px no-repeat;
+  background: url('../img/airspace/hitler.gif') center / 230px 500px no-repeat;
   bottom: 50000px;
   height: 500px;
   left: 45%;
@@ -84,21 +84,21 @@
 
 .section-airspace__asteroid--one {
   animation: moveAround 14s infinite;
-  background: url('../img/airspace/asteroid.png') center / 270px 220px no-repeat;
+  background: url('../img/airspace/asteroid.gif') center / 270px 220px no-repeat;
   height: 220px;
   width: 270px;
 }
 
 .section-airspace__asteroid--two {
   animation: moveAround 12s infinite;
-  background: url('../img/airspace/asteroid2.png') center / 300px 160px no-repeat;
+  background: url('../img/airspace/asteroid2.gif') center / 300px 160px no-repeat;
   height: 160px;
   width: 300px;
 }
 
 .section-airspace__asteroid--three {
   animation: moveAround 10s infinite;
-  background: url('../img/airspace/asteroid3.png') center / 222px 120px no-repeat;
+  background: url('../img/airspace/asteroid3.gif') center / 222px 120px no-repeat;
   height: 130px;
   width: 222px;
 }

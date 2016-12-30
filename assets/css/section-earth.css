@@ -9,26 +9,26 @@
 }
 
 .section-earth__earth {
-  background: url('../img/earth/earth.png') 0 / 780px 200px repeat,
-              url('../img/earth/earth.png') 550px 600px / 780px 300px repeat,
-              url('../img/earth/earth.png') 250px 0 / 780px 180px repeat;
+  background: url('../img/earth/earth.gif') 0 / 780px 210px repeat,
+              url('../img/earth/earth.gif') 550px 600px / 780px 300px repeat,
+              url('../img/earth/earth.gif') 250px 0 / 780px 180px repeat;
   height: 610px;
   bottom: -230px;
 }
 
 .section-earth__front {
-  background: url('../img/earth/front.png') center bottom / 1000px 500px no-repeat;
+  background: url('../img/earth/front.gif') center bottom / 1000px 500px no-repeat;
   margin-left: 40px;
 }
 
 .section-earth__transparent {
-  background: url('../img/earth/transparent.png') 0 / 675px 350px repeat;
+  background: url('../img/earth/transparent.gif') 0 / 675px 350px repeat;
   height: 350px;
   bottom: -535px;
 }
 
 .section-earth__gulli {
-  background: url('../img/earth/gulli.png') center 15px / 234px 75px no-repeat;
+  background: url('../img/earth/gulli.gif') center 15px / 234px 75px no-repeat;
   height: 85px;
   left: calc(50% - 80px);
   width: 240px;

@@ -14,7 +14,7 @@ body {
 
 .section-infinite-start__fin {
   animation: stepAnimation 5s infinite;
-  background: url('../img/fin.png') center / 500px 570px no-repeat;
+  background: url('../img/fin.gif') center / 500px 570px no-repeat;
   bottom: 5000px;
   height: 570px;
   left: 10%;
