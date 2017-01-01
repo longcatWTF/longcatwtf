@@ -15,14 +15,3 @@ html, body {
   width: 100%;
 }
 
-/*******************
- * Debugging
- *******************/
-
-#debug {
-  position: fixed;
-  bottom: 0;
-  color: white;
-  text-shadow: 0 0 2px black;
-  z-index: 99999;
-}
