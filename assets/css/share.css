@@ -3,6 +3,7 @@
   color: white;
   font-family: 'Bangers', cursive;
   letter-spacing: 0.8px;
+  text-shadow: black 0 0 2px;
   position: fixed;
   right: 0;
   margin: 10px;
