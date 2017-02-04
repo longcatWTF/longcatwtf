@@ -7,6 +7,14 @@
   <meta name="author" content="Thibault Jan Beyer and Lucas Beyer" />
   <!-- http://davidbcalhoun.com/2010/viewport-metatag/ -->
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+  <!-- To add the image to the twitter share link -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ThibaultBeyer">
+  <meta name="twitter:title" content="Who's got the longest??">
+  <meta name="twitter:description" content="See how long your longcat can go!">
+  <meta name="twitter:image" content="http://longcat.wtf/assets/img/logo.jpg">
+
   <title>Longcat is looooooooooong!</title>
 
   <!-- Critical CSS -->
@@ -168,6 +176,18 @@
 
   <section class="section section-infinite-start">
     <div class="section__element section-infinite-start__fin"></div>
+    <div class="section__element section-infinite-start__adsbygoogle">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Longcat.wtf -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-7411822855484586"
+          data-ad-slot="1665344015"
+          data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
   </section>
 
   <div class="longcat">
@@ -198,14 +218,6 @@
     <img src="assets/img/social/Facebook.gif" class="fb button share__img" alt="on Facebook" role="link">
   </div>
 
-  <div id="debug">
-    <div>y: <span id="dbg_y">0</span></div>
-    <div>v: <span id="dbg_v">0</span></div>
-    <div>a: <span id="dbg_a">0</span></div>
-    <div>t: <span id="dbg_t">0</span></div>
-    <div>s: <span id="dbg_s">0</span></div>
-  </div>
-
   <!-- Sounds to be played -->
 
   <!-- Source: http://soundbible.com/1684-Cat-Meowing-2.html CC-BY -->
@@ -230,5 +242,16 @@
   <script src="lib/longcat.js"></script>
   <script src="lib/main.js"></script>
   <script src="lib/message.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-91434502-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </body>
 </html>
